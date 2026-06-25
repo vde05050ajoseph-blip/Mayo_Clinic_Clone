@@ -645,6 +645,24 @@ color: white;
     text-decoration: none;
 }
 
+.autoScroll{
+    display: flex;
+    position: fixed;
+    background-color: var(--background-footer);
+    z-index: 1000;
+    padding: 10px 20px;
+    height: 200px;
+    width: 150px;
+    color: white;
+    bottom: -130px;
+    right: -90px;
+    transform: rotate(-40deg);
+    justify-content: center;
+}
+
+.autoScroll p{
+    padding: 1px;
+}
 
 @media (max-width:1300px) {
     .linkWrapper{
@@ -752,6 +770,34 @@ color: white;
 .tradeMark p:last-child{
     min-width: 150px;
 }
+
+.findLink{
+    line-height: 20px;
+}
+
+.linkMain a{
+    font-size: 0.75rem;
+}
+.exploreWrapper{
+    column-gap: 40px;
+}
+
+.autoScroll{
+    display: flex;
+    position: fixed;
+    background-color: var(--background-footer);
+    z-index: 1000;
+    padding: 1px 2px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    top: calc(50vh - 30px);
+    right: -35px;
+    transform: rotate(90deg);
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 
@@ -777,7 +823,7 @@ color: white;
 .textWrapper{
     color: white;
     padding-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
     padding-right: 10px;
 }
 
@@ -895,6 +941,9 @@ padding-right: 0;
     display: none;
 }
 
+.exploreLink{
+    padding: 20px;
+}
 
 .exploreWrapper{
     display: grid;
