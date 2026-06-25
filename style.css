@@ -32,7 +32,7 @@ body{
     align-items: center;
 }
 
-.authWrapper i{
+.authWrapper > i{
     display: none;
 }
 
@@ -106,7 +106,7 @@ body{
     background-size: 100vw 600px;
     background-repeat: no-repeat;
     display: flex;
-    height: 94vh;
+    height: 590px;
     align-items: end;
     width: 100vw;
 }
@@ -115,15 +115,16 @@ body{
 .textWrapper{
     color: white;
     padding: 30px 50px;
-    line-height: 8rem;
+    
 }
 
-.text{
+.textWrapper h1{
       font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style:normal;
-    font-size: clamp(1rem, 3vw, 5rem);
+    font-size: clamp(2rem, 5vw, 6rem);
+    margin-bottom: 40px;
 }
 
 .cta{
@@ -437,6 +438,90 @@ order: -1;
 
 }
 
+.giveToday {
+    background-color: #0d0d33;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 40px;
+    padding-right: 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.givingCharity{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 70vw;
+    column-gap: 100px;
+}
+
+.giveToday img{
+    width: 20vw;
+    height: auto;
+}
+
+.charityCTA{
+    padding-top: 30px;
+}
+
+.charity h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.6rem;
+    justify-self: flex-start;
+}
+
+.charity h4{
+    margin-top: 20px;
+}
+
+
+.charityCTA li a{
+        background-color: #0057b8;
+color: white;
+    border-radius: 40px;
+    padding: 15px 100px;
+    text-decoration: none;
+     
+}
+
+.termsCon{
+    background-color: #e1f0ff;
+    padding: 50px;
+}
+
+.footerLinks{
+    margin-bottom: 70px;
+}
+
+.footerLinks li{
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.footerLinks li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 30px;
+}
+
+.footerLinks li a:hover{
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+.tradeMark{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.212);
+    font-size: 0.95rem;
+}
+
+.tradeMark p:first-child{
+    color: grey;
+}
 
 @media (max-width:1300px) {
     .linkWrapper{
@@ -513,6 +598,37 @@ order: -1;
     width: 100%;
     column-gap: 20px;
 }
+
+.heroSection{
+      background-image: 
+    linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)), 
+    url(/Assets/ChatGPT\ Image\ Jun\ 23\,\ 2026\,\ 02_48_50\ AM.png);
+    background-size:cover ;
+    background-position: -150px 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    width: 100vw;
+}
+
+.giveToday {
+    background-color: #0d0d33;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.givingCharity{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tradeMark p:last-child{
+    min-width: 150px;
+}
 }
 
 
@@ -520,6 +636,31 @@ order: -1;
 .auth{
     display: none;
 }
+
+.cta{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.cta a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.textWrapper h1{
+    margin-bottom: 10px;
+}
+
+.cta li:last-child a{
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px 60px;
+}
+
 
 .trustWrapper{
 display: block;
@@ -549,7 +690,7 @@ padding-right: 0;
     padding: 0px 30px;
     gap: 0.8rem;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -609,5 +750,42 @@ padding-right: 0;
     grid-template-columns: 1fr;
     width: 100%;
     column-gap: 20px;
+}
+
+.giveToday img{
+    display: none;
+}
+
+.givingCharity {
+    padding-left: 10px;
+}
+
+
+
+.footerLinks{
+    margin-bottom: 20px;
+}
+
+.footerLinks li{
+    display: block;
+    margin-inline: 10px;
+}
+
+.footerLinks li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 30px;
+}
+
+
+.tradeMark{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.212);
+    font-size: 0.95rem;
+    gap: 20px;
 }
 }
