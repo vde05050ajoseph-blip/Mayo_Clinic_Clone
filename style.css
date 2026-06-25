@@ -115,7 +115,6 @@ body{
 .textWrapper{
     color: white;
     padding: 30px 50px;
-    
 }
 
 .textWrapper h1{
@@ -123,7 +122,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 100;
   font-style:normal;
-    font-size: clamp(2rem, 5vw, 6rem);
+    font-size: clamp(3rem, 5vw, 6rem);
     margin-bottom: 40px;
 }
 
@@ -651,6 +650,13 @@ color: white;
     font-size: 1.1rem;
 }
 
+.textWrapper{
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
 .textWrapper h1{
     margin-bottom: 10px;
 }
@@ -755,12 +761,6 @@ padding-right: 0;
 .giveToday img{
     display: none;
 }
-
-.givingCharity {
-    padding-left: 10px;
-}
-
-
 
 .footerLinks{
     margin-bottom: 20px;
