@@ -314,7 +314,11 @@ order: -1;
 
 .trustText h4 a{
     color: #0057b8;
+    text-decoration-thickness: 2px ;
+}
 
+.trustText h4 a:hover {
+    text-decoration:none ;
 }
 
 .buttonCTA{
@@ -327,6 +331,11 @@ order: -1;
     border-radius: 40px;
     padding: 15px 25px;
     text-decoration: none;
+}
+
+.buttonCTA a:hover{
+        color: #2e7fdb;
+        border: 2px solid #2e7fdb;
 }
 
 .locationWrapper{
@@ -481,7 +490,113 @@ color: white;
     border-radius: 40px;
     padding: 15px 100px;
     text-decoration: none;
-     
+}
+
+.charityCTA li a:hover{
+    background-color: #525ce9;
+}
+
+.exploreLink{
+    padding: 60px;
+    background-color: #012d61;
+}
+
+.exploreWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 40px;
+    padding-bottom: 30px;
+    column-gap: 6vw;
+}
+
+.exploreWrapper a{
+    color: white;
+    text-decoration: none;
+}
+
+.findLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.linkMain{
+    border: 2px solid rgba(255, 255, 255, 0.39);
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    gap: 15px;
+    align-items: center;
+}
+
+.linkMain:hover{
+    border: 2px solid white;
+}
+
+.linkMain > i{
+    color: white;
+    font-size: 35px;
+}
+
+.linkMain li{
+    display: inline-flex;
+    gap: 40px;
+}
+
+.linkHead{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.medicalProfessionals .linkHead:nth-child(1), .researcherWrapper .linkHead:nth-child(1) {
+    padding-top: 0px;
+}
+
+.linkHead i{
+    color: white;
+}
+
+.followWrapper{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+}
+
+.followWrapper p{
+    padding-bottom: 20px;
+}
+
+.socials li{
+    display: inline-block;
+    color: white;
+    margin-inline: 5px;
+}
+
+.socials a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.342);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.socials a:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.download{
+    display: flex;
+    gap: 20px;
 }
 
 .termsCon{
@@ -521,6 +636,15 @@ color: white;
 .tradeMark p:first-child{
     color: grey;
 }
+
+.tradeMark p:last-child a:first-child{
+    color: black;
+}
+
+.tradeMark p:last-child a:first-child:hover {
+    text-decoration: none;
+}
+
 
 @media (max-width:1300px) {
     .linkWrapper{
@@ -758,8 +882,44 @@ padding-right: 0;
     column-gap: 20px;
 }
 
+.giveToday {
+    background-color: #0d0d33;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 80px 40px;
+    justify-content: center;
+}
+
 .giveToday img{
     display: none;
+}
+
+
+.exploreWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+
+.followWrapper{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+}
+
+.socials{
+    margin-left: -10px;
+}
+
+.socials li{
+    margin-inline: 2px;
+}
+.playStore{
+    margin-top: 20px;
 }
 
 .footerLinks{
