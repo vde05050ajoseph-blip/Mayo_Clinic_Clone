@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Instrument+Serif:ital@0;1&display=swap');
 
+ @font-face {
+    font-family: 'Georgia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Regular'), url('georgia.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Georgia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold'), url('georgiab.woff') format('woff');
+    }
+    
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -296,7 +311,7 @@ order: -1;
 
 
 .trustText h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Georgia Bold', serif;
   font-optical-sizing: auto;
   font-weight: bolder;
   font-style:normal ;
@@ -420,7 +435,7 @@ order: -1;
 }
 
 .featuredCare h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Georgia Bold', serif;
 }
 
 .fLink{
@@ -474,7 +489,7 @@ order: -1;
 }
 
 .charity h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Georgia Bold', serif;
     font-size: 2.6rem;
     justify-self: flex-start;
 }
@@ -545,9 +560,9 @@ color: white;
 }
 
 .linkHead{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 1.1rem;
+    font-family: 'Georgia Bold', serif;
+    font-weight: 700;
+    font-size: 1rem;
     padding-bottom: 10px;
     padding-top: 15px;
 }
